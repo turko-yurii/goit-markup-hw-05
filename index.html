@@ -23,7 +23,7 @@
         <a class="webstudio" href="./index.html"><span class="other-color">WEB</span>STUDIO</a>
         </div>
         <ul class="header-list flex">
-            <li class="item"><a class="header-link" href="./">Studio</a></li>
+            <li class="item"><a class="header-link active" href="./">Studio</a></li>
             <li class="item"><a class="header-link" href="./portfolio.html">Portfolio</a></li>
             <li class="item"><a class="header-link" href="./">Contacts</a></li>
         </ul>
@@ -45,7 +45,7 @@
              <h1 class="header-top-list">Effective Solutions <br> for Your Business</h1>
         </div>
              <div class="header-top-item">
-                 <button class="header-top-button">Order Service</button>
+                 <button class="header-top-button" data-modal-open >Order Service</button>
              </div>
         
     </section>
@@ -351,6 +351,16 @@
     </div>
     </div>
 </footer>
-
+<!--Modal-->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal-btn" data-modal-close>
+            <svg class="modal-icon" width="8" height="8">
+                <use href="./image/icon.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
